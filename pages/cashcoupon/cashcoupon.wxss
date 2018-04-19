@@ -1,0 +1,23 @@
+/* pages/cashcoupon/cashcoupon.wxss */
+/* 代金券 */
+ page{
+  background-color:#F5FAF5; 
+  height: 100%;
+
+} 
+ view.cashcoupon {
+  padding-top:30rpx;
+  height: 100%;
+  width: 100%;
+} 
+.voucher{
+  padding:0 30rpx 30rpx 30rpx;
+}
+.voucher image{
+  width: 690rpx;
+  height: 275rpx;
+}
+/* 暂无代金券 */
+.emptyItem view{
+   padding-left: 30rpx; 
+}

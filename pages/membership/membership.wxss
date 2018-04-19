@@ -1,0 +1,33 @@
+.membership{
+  padding:60rpx 30rpx 0 30rpx;
+  font-size: 28rpx;
+  color:#496869;
+
+}
+.recharge,.voucher,.order view{
+   line-height: 50rpx; 
+}
+.recharge view{
+  letter-spacing:0.12em;
+}
+.voucher,.order{
+  padding-top:60rpx;
+
+}
+ .letter-1{
+  letter-spacing:0.08em;
+} 
+.letter-2{
+  letter-spacing:0.13em;
+}
+.letter-3{
+  letter-spacing:0.08em;
+}
+.left-rpx {
+  margin-left: -10rpx;
+}
+.title{
+  color:#83C582;
+  font-size: 36rpx;
+  padding-bottom: 20rpx;
+}

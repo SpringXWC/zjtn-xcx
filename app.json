@@ -1,0 +1,21 @@
+{
+  "pages": [
+    "pages/evaluate/evaluate",
+    "pages/toRecharge/toRecharge",
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/expenditure/expenditure",
+    "pages/recharge/recharge",
+    "pages/cashcoupon/cashcoupon",
+    "pages/membership/membership"
+  
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false,
+    "navigationBarTitleText": "选择门店",
+    "backgroundColor": "#eee"
+  }
+}

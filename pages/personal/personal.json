@@ -1,0 +1,8 @@
+{
+  
+  "navigationBarTitleText": "我的账户",
+    "usingComponents": {
+      "iconfont": "/components/iconfont/iconfont"
+    }
+ 
+}

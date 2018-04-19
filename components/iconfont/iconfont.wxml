@@ -1,0 +1,2 @@
+<!--components/font/header.wxml-->
+<text class="iconfont icon-{{type}}"></text>

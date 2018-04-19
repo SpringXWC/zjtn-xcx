@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "iconfont": "/components/iconfont/iconfont",
+    "header": "/components/header/header"
+  },
+  
+  "enablePullDownRefresh": false
+}

@@ -1,0 +1,102 @@
+/* pages/toRecharge/toRecharge.wxss */
+page{
+  height: 100%;
+  overflow: auto;
+}
+/* 充值活动部分 */
+
+.toRechargeItem{
+  padding:0 30rpx;
+  padding-top:30rpx;
+}
+
+.activity{
+  color:#203736;
+  font-size:36rpx;
+  padding-bottom:30rpx;
+
+   
+}
+.activity::before{
+  display: inline-block;
+  content: "";
+  width: 10rpx;
+  height: 31rpx;
+  background-color:#83C582;
+  border-radius: 10rpx;
+  margin-right: 20rpx;
+  vertical-align: middle; 
+}
+.discounts{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ padding-bottom:45rpx;
+
+
+}
+.discountsMoney{
+  color:#294E4F;
+  font-size: 30rpx;
+  line-height: 60rpx;
+}
+.select{
+  color:#83C582;
+  font-size: 28rpx; 
+  border: 1rpx solid #83C582;
+  width: 150rpx;
+  height: 60rpx; 
+  text-align: center;  
+  line-height: 60rpx;
+  border-radius: 10rpx;
+}
+/* 会员提示部分 */
+.hint{
+  background-color:#EDF6EC;
+  font-size: 26rpx;
+  color:#83C582;
+}
+.hintItem{
+  padding:30rpx 0;
+  margin:0 30rpx;
+  letter-spacing:0.1em;  
+  line-height: 1.9em;  
+}
+/* 支付方式部分 */
+.payment{
+  padding-top:40rpx
+
+}
+.text{
+  color:#294E4F;
+  font-size: 30rpx;
+  padding-left: 20rpx;
+}
+.icon{
+  font-size: 43rpx;
+  vertical-align: middle;
+}
+
+  .payment view:nth-child(2) .discountsMoney .icon {
+    color:#78BF59;
+}
+  .payment view:nth-child(3) .discountsMoney .icon {
+    color:#31A4ED;
+}  
+.btn{
+  width: 100%;
+  position: absolute;
+  bottom:30rpx; 
+}
+.btn button{
+  margin:0 30rpx;
+  background-color:#83C582;
+  font-size: 40rpx;
+ 
+  
+}
+
+
+
+
+

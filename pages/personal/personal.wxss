@@ -1,0 +1,95 @@
+page{
+  height: 100%;
+  background-color:#F5FAF5;
+  overflow: auto;
+}
+.personal{
+ position: relative;
+ padding:0 15rpx; 
+}
+.account_card{
+  width: 726rpx;
+  height: 466rpx;
+  padding-top:30rpx;
+ 
+}
+.moneyCon{
+  display: flex;
+  flex-direction: column;
+  position: absolute; 
+  top:180rpx;
+  left:80rpx;
+  color:#FFFAD7;
+}
+.balance{
+  font-size:36rpx; 
+}
+.residueMoney{
+  position: absolute;
+  left:-10rpx;
+  top:60rpx;
+  font-size: 60rpx;
+}
+.rule{
+ position: absolute;
+ top:350rpx;
+ left:80rpx;
+ color:#FFFAD7;
+  
+}
+.ruleText{
+  position: absolute;
+  top:20rpx;
+  opacity: 0.6;
+  font-size: 24rpx;
+  border:1rpx solid #FFFAD7;
+  padding:5rpx;   
+  border-radius: 9rpx;
+  width: 173rpx;
+  text-align: center;
+}
+.recharge{
+  position:relative ;
+  left:450rpx;
+  top:16rpx;
+}
+.rechargeText{
+  
+ padding-left:30rpx; 
+  font-size:30rpx; 
+}
+.recharge image{
+  position: absolute;
+  left:20rpx;
+  top:10rpx; 
+  width: 118rpx;
+  height: 40rpx;
+}
+/* 跳转列表 */
+.listCon{
+  margin-top: 70rpx
+}
+.list{
+ background-color:#fff;
+ margin:20rpx 30rpx;
+ padding:10rpx;
+ border-radius: 10rpx;
+}
+.listText{
+  color:#203736;
+  font-size: 30rpx;
+  margin-left:20rpx;
+}
+.iconImg{
+  margin-left:30rpx;
+  color:#83C582;
+  font-size: 60rpx;
+  vertical-align: middle;
+}
+.back {
+  color:#DCDCDD;
+  font-size:30rpx; 
+  float: right;
+  padding-top:22rpx;
+  padding-right:30rpx;
+}

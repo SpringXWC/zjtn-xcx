@@ -1,0 +1,108 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200 rpx 0;  
+  box-sizing: border-box; 
+  
+  }
+
+.text-default {
+  color: #294E4F;
+}
+
+.text-primary {
+  color: #83C582; }
+
+.text-minor {
+  color: #B4B5B5; }
+
+.text-warn {
+  color: yellow; }
+
+.text-left {
+  text-align: left; }
+
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.header-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100%; }
+  .header-box + .page-content {
+    padding-top: 110rpx; }
+  image{
+      vertical-align: middle;
+  }
+
+/*# sourceMappingURL=app.wxss.map */
+
+/* 充值记录、消费记录共用样式 */
+.list{
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  border-bottom:1rpx solid #EFEFEF;
+  padding:30rpx 44rpx 35rpx 30rpx;
+}
+
+.date{
+  color:#B4B5B5;
+  font-size: 24rpx;
+}
+.time{
+  padding-left: 22rpx;
+}
+.listItem{
+  display: flex; 
+  justify-content: space-between;
+  color:#B4B5B5;
+  font-size: 28rpx;
+}
+.mode{
+  padding-top:20rpx;
+}
+.mode text{
+  color:#000;
+}
+.money{
+  color:#83C582;
+  font-size: 40rpx;
+}
+/* 暂无消费记录 */
+.empty{
+  background-color:#fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+
+}
+.emptyItem{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  padding-bottom:300rpx;
+}
+.emptyItem image{
+  width: 264rpx;
+  height: 240rpx;
+}
+.emptyItem view{
+  color:#B4B5B5;
+  font-size: 28rpx;
+  letter-spacing:0.08em;
+   padding-top:30rpx; 
+}
+

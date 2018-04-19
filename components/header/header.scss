@@ -1,0 +1,31 @@
+@charset "utf-8";
+@import "../../base/config/config";
+/* components/header/header.wxss */
+.ui-header {
+  display: flex;
+  height: pxTorpx($heraderHeight);
+  align-items: center;
+}
+
+.ui-txt-title {
+  text-align: center;
+  @include ellipsis();
+}
+
+.left, .right {
+  flex: 2;
+}
+
+.ui-icon iconfont {
+  font-size: pxTorpx(50);
+  padding: pxTorpx(15) pxTorpx(20);
+
+}
+
+.righttxt {
+  text-align: right;
+  color: #294E4F;
+  padding-right: pxTorpx(20);
+  font-size: pxTorpx(28)
+}
+

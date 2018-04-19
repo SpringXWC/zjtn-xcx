@@ -1,0 +1,18 @@
+/* pages/recharge/recharge.wxss */
+
+/* 充值记录 */
+.redCol{
+  color:#D9565D;
+}
+/* 暂无充值记录 */
+.emptyItem .toRecharge{
+  margin-top: 25rpx;
+  color:#83C582;
+  font-size: 28rpx;
+  border:1rpx solid #83C582;
+   padding:10rpx 0; 
+  border-radius: 10rpx;
+  text-align: center;
+  width: 190rpx;
+  margin-left: 30rpx;
+}

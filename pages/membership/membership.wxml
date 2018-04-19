@@ -1,0 +1,21 @@
+<view class='membership'>
+  <view class='recharge'>
+    <view class="title">一、充值规则</view>
+    <view>1、充值可享10%的赠送余额</view>
+    <view>2、赠送余额不退不换，在充值余额不足时使用</view>
+    <view>3、需要退充值余额时请拨打400-633-0933提交本人</view>
+    <view>银行信息，三个工作日内充值余额将退还银行账户</view>
+  </view>
+  <view class='voucher'>
+    <view class="title">二、代金券规则</view>
+    <view>1、代金券可与其他支付方式并用</view>
+    <view>2、代金券不退不换</view>
+  </view>
+  <view class='order'>
+    <view class="title">三、订单规则</view>
+    <view class='letter-1'>1、订单生成后，调理师和房间已经为您预留，如需变更</view>
+    <view class='letter-2'>及退单订单请拨打400-633-0933退还50%实付金额</view>
+    <view class='left-rpx'>（赠送余额、代金券不予退还）</view>
+    <view class="letter-3">2、订单时间开始后调理师和房间全程为您预留，所以不可变更及退单</view>
+  </view>
+</view>

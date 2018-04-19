@@ -1,0 +1,24 @@
+<view class="personal">
+  <image src="../../assets/img/iv_account_card@2x.png" class="account_card" />
+  <view class='moneyCon'>
+    <text class='balance'>余额：</text>
+    <text class='residueMoney'>￥{{residueMoney}}</text>
+  </view>
+  <view class='rule'>
+    <text class='ruleText' bindtap='toRulePage'>会员使用规则</text>
+    <view class='recharge' bindtap='toRecharge'>
+      <text class='rechargeText'>去充值</text>
+      <image src="../../assets/img/icon_account_arrow@2x.png" />
+    </view>
+  </view>
+  <view class='listCon'>
+    <view class='list' wx:for="{{list}}" wx:key="key">
+    <navigator url="{{item.url}}" hover-class="none">
+      <iconfont type="{{item.img}}" class="iconImg"></iconfont>
+      <text class="listText">{{item.text}}</text>
+      <iconfont type="{{item.back}}" class="back"></iconfont>
+    </navigator>
+      
+    </view>
+  </view>  
+</view>

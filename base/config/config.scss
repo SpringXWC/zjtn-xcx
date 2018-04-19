@@ -1,0 +1,89 @@
+@charset "UTF-8";
+//px => rpx 比例
+$pxTorpx: 1;
+//px => rem 比例
+$pxToRemScale: 100;
+//主色调
+$mainColor: #83C582;
+//默认文字颜色
+$txtColorDefault: #294E4F;
+//深色文字
+$txtColorDark: #203736;
+//次要文字
+$txtColorMinor: #B4B5B5;
+//警告文字
+$txtColorWarn: yellow;
+
+// 顶部导航条高度
+$heraderHeight: 110;
+
+//清除浮动
+@mixin clearfix() {
+  &::before,
+  &:after {
+    content: " ";
+    display: table;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+    clear: both;
+  }
+  & {
+    zoom: 1
+  }
+}
+
+//溢出省略号
+@mixin ellipsis($rows:1) {
+  @if $rows>1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: $rows;
+    -webkit-box-orient: vertical;
+  } @else {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+//边框盒子
+@mixin borderbox() {
+  box-sizing: border-box;
+  * {
+    box-sizing: inherit;
+  }
+}
+
+@function toNumber($number) {
+  @return $number / ($number * 0 + 1);
+}
+
+//px => rpx
+@function pxTorpx($px) {
+  @return toNumber($px) / $pxTorpx * 1rpx;
+}
+
+//rem 相关
+
+//$px为需要转换的字号
+@function pxTorem($px) {
+  @return toNumber($px) / $pxToRemScale * 1rem;
+}
+
+//px => rem
+@mixin remCalc($property, $values...) {
+  $max: length($values); //返回$values列表的长度值
+  $remValues: '';
+
+  @for $i from 1 through $max {
+    $value: toNumber(nth($values, $i));
+    $remValues: #{$remValues + $value/$pxToRemScale }rem;
+
+    @if $i < $max {
+      $remValues: #{$remValues + " "};
+    }
+  }
+
+  #{$property}: $remValues;
+}

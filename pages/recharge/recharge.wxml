@@ -1,0 +1,21 @@
+<!--pages/recharge/recharge.wxml-->
+<view>
+  <view wx:for="{{list}}" wx:key="key" class='list' hidden="{{!isEmpty}}">
+     <view class='date'>
+        <text>{{item.date}}</text>
+        <text class='time'>{{item.time}}</text>
+     </view>
+     <view class='listItem'>
+      <view class='mode'>支付方式：<text>{{item.mode}}</text></view>
+      <view class='money redCol'>+{{item.money}}</view>
+     </view>
+  </view>
+  <view class='empty' hidden="{{isEmpty}}">
+    <view class='emptyItem'>
+      <image src="../../assets/img/iv_recharge_kong@2x.png"/>
+      <view>暂无充值记录</view>
+      <view bindtap='toRecharge' class='toRecharge'>立即去充值</view>  
+    </view> 
+  </view> 
+   
+</view>

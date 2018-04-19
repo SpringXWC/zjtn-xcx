@@ -1,0 +1,34 @@
+<!--pages/toRecharge/toRecharge.wxml-->
+<view>
+  <view class='toRechargeItem'>
+    <view class="activity">充值活动</view>
+    <view wx:for="{{list}}" wx:key="key" class='discounts'>
+      <view class='discountsMoney'>充{{item.money}}元送{{item.send}}元</view>
+      <view class='select' bindtap='selected'>{{select}}</view>
+    </view>
+  </view>
+  <view class='hint'>
+    <view class='hintItem'>
+      <view>致尊敬的会员：</view>
+      感谢您对正经推拿的信任，成为会员，将会给您提供更便捷、更优惠的服务；您在消费中遇到任何问题可向我们反馈，我们将用心为您处理！
+    </view>
+  </view>
+  <view class='payment toRechargeItem'>
+    <view class="activity">选择支付方式</view>
+    <view wx:for="{{payment}}" wx:key="key" class='discounts'>
+      <view class='discountsMoney'>
+        <iconfont type="{{item.iconImg}}" class="icon"></iconfont>
+        <text class='text'>{{item.text}}</text>
+      </view>
+      <view class='select' bindtap='selected'>{{select}}</view>
+    </view>
+  </view>
+  <view class='btn'>
+    <button 
+      type="primary" 
+      disabled="{{disabled}}"
+      hover-class="none" 
+      bindtap="primary"> 提交 </button>
+  </view>
+  
+</view>

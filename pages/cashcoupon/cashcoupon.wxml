@@ -1,0 +1,16 @@
+<!--pages/cashcoupon/cashcoupon.wxml-->
+
+<view class='cashcoupon' hidden='{{!isEmpty}}'>
+  <view wx:for="{{list}}" wx:key="key" class='voucher'>
+    <image src="{{item.url}}" />
+  </view>
+</view>
+<view class='empty' hidden="{{isEmpty}}">
+  <view class='emptyItem'>
+    <image src="../../assets/img/iv_daijinquan_kong@2x.png"/>
+    <view>暂无代金券</view>
+  </view>
+</view>
+
+
+

@@ -1,0 +1,28 @@
+/* components/header/header.wxss */
+.ui-header {
+  display: flex;
+  height: 110rpx;
+  align-items: center; 
+  box-shadow: 0 0 8rpx rgba(0,0,0,0.08)
+  }
+
+.ui-txt-title {
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.left, .right {
+  flex: 2; }
+
+.ui-icon iconfont {
+  font-size: 50rpx;
+  padding: 15rpx 20rpx; }
+
+.righttxt {
+  text-align: right;
+  color: #294E4F;
+  padding-right: 20rpx;
+  font-size: 28rpx; }
+
+

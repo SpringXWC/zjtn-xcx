@@ -1,0 +1,18 @@
+<!--components/header/header.wxml-->
+
+<view class="ui-header" style="background: {{bgColor}}; color: {{color}};border-color: {{borderColor}};">
+  <view class="ui-item left ui-icon">
+    <slot name="left"></slot>
+  </view>
+  <view class="ui-item ui-txt-title" style="flex: {{titleFlex}};">
+    <text>{{title}}</text>
+  </view>
+  <view class="ui-item right">
+    <view class="ui-icon">
+      <slot name="right"></slot>
+    </view>
+    <view class="righttxt">
+      <slot name="righttxt"></slot>
+    </view>
+  </view>
+</view>

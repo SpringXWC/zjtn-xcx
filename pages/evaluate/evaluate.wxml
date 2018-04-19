@@ -1,0 +1,28 @@
+<!--pages/evaluate/evaluate.wxml-->
+<view class='evaluateCon'>
+  <view class='evaluateBgk'>
+    <view class='evaluateItem'>
+    <view class='title'>服务评价：</view>
+    <view  class='starList'>
+      <block wx:for="{{stars}}" wx:key="key">
+      <iconfont type="{{item.iconImg}}" class="star {{current == index ?'active':''}} " data-index="{{index}}" bindtap="selectStar"></iconfont>
+      </block>
+    </view>
+  </view>
+  </view>
+  <form bindsubmit="bindFormSubmit">
+    <view class='textarea'>
+      <textarea placeholder="请输入您的评价" placeholder-class="placeholderSty" auto-focus name="textarea" fixed="{{tag}}"/>
+    </view>
+  
+    <view class='btn'>
+      <button 
+      type="primary" 
+      disabled="{{disabled}}"
+      hover-class="none" 
+      form-type="submit"
+      bindtap="primary"> 提交 </button>
+    </view>
+  </form>
+ 
+</view>
