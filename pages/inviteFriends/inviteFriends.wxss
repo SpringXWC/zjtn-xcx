@@ -1,0 +1,68 @@
+page {
+  height: 100%;
+  background-color: #F5FAF5; }
+
+.red-packet {
+  position: relative; }
+  .red-packet image {
+    width: 750rpx;
+    height: 569rpx; }
+
+.packet-num {
+  position: absolute;
+  top: 253rpx;
+  left: 0;
+  width: 100%;
+  color: #C1373F;
+  font-weight: bold; }
+  .packet-num .currency {
+    font-size: 44rpx;
+    vertical-align: top;
+    margin-top: 8rpx;
+    margin-right: 15rpx; }
+  .packet-num text {
+    line-height: 1em;
+    display: inline-block;
+    font-size: 80rpx; }
+
+.tips {
+  padding: 0 30rpx;
+  font-size: 26rpx;
+  color: #294E4F; }
+  .tips .ui-num {
+    color: #D9565D; }
+  .tips .ui-num-box {
+    margin-top: 10rpx; }
+
+.dividing {
+  position: relative;
+  text-align: center;
+  font-size: 24rpx;
+  margin: 105rpx 46rpx; }
+  .dividing:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    border-bottom: 1px solid #EBEBEB; }
+  .dividing text {
+    padding: 0 25rpx;
+    background-color: #F5FAF5;
+    color: #203736; }
+
+.share {
+  display: flex;
+  text-align: center; }
+  .share .share-item {
+    flex: 1; }
+    .share .share-item image {
+      width: 94rpx;
+      height: 94rpx; }
+    .share .share-item text {
+      font-size: 26rpx;
+      color: #294E4F; }
+
+/*# sourceMappingURL=inviteFriends.wxss.map */

@@ -1,0 +1,133 @@
+<!--pages/order/orderList.wxml-->
+<navigator class="order-info bg-white" url="./orderDetail">
+  <view class="ui-title flex-box space-between">
+    <view class="text-minor">
+      订单状态：
+      <text>未开始</text>
+    </view>
+    <view>
+      <text class="">已收藏</text>
+      <iconfont type="collect" class="text-minor collect"></iconfont>
+    </view>
+  </view>
+  <view class="info-detail">
+    <image src="../../assets/imgs/1.png" class="media-object"></image>
+    <view>
+      <view class="ui-shop">
+        <view class="shop-name">
+          预约门店：
+          <text>南山区店 Lorem ipsum dolor sit amet, consecteturs.</text>
+        </view>
+      </view>
+      <view>
+        开始时间：
+        <text>2018/1/18/14：40</text>
+      </view>
+      <view>
+        服务项目：
+        <text>失眠头痛</text>
+      </view>
+      <view>
+        服务调理师：
+        <text>张小美 ￥2.5/分钟</text>
+      </view>
+      <view>
+        实付：
+        <text>￥120.00</text>
+      </view>
+      <view class="text-primary text-right">
+        <text>倒计时：02:32</text>
+        <button class="btn-primary chargeback" size="mini">立刻退单</button>
+      </view>
+    </view>
+  </view>
+</navigator>
+<navigator class="order-info bg-white">
+  <view class="ui-title flex-box space-between">
+    <view class="text-primary">
+      订单状态：
+      <text>已完成</text>
+    </view>
+    <view>
+      <text class="text-primary">已收藏</text>
+      <iconfont type="collect" class="text-primary collect"></iconfont>
+    </view>
+  </view>
+  <view class="info-detail">
+    <image src="../../assets/imgs/1.png" class="media-object"></image>
+    <view>
+      <view class="ui-shop">
+        <view class="shop-name">
+          预约门店：
+          <text>南山区店 Lorem ipsum dolor sit amet, consecteturs.</text>
+        </view>
+      </view>
+      <view>
+        开始时间：
+        <text>2018/1/18/14：40</text>
+      </view>
+      <view>
+        服务项目：
+        <text>失眠头痛</text>
+      </view>
+      <view>
+        服务调理师：
+        <text>张小美 ￥2.5/分钟</text>
+      </view>
+      <view>
+        实付：
+        <text>￥120.00</text>
+      </view>
+    </view>
+  </view>
+</navigator>
+<navigator class="order-info bg-white">
+  <view class="ui-title flex-box space-between">
+    <view class="text-minor">
+      订单状态：
+      <text>未开始</text>
+    </view>
+    <view>
+      <text class="">已收藏</text>
+      <iconfont type="collect" class="text-minor collect"></iconfont>
+    </view>
+  </view>
+  <view class="info-detail">
+    <image src="../../assets/imgs/1.png" class="media-object"></image>
+    <view>
+      <view class="ui-shop">
+        <view class="shop-name">
+          预约门店：
+          <text>南山区店 Lorem ipsum dolor sit amet, consecteturs.</text>
+        </view>
+      </view>
+      <view>
+        开始时间：
+        <text>2018/1/18/14：40</text>
+      </view>
+      <view>
+        服务项目：
+        <text>失眠头痛</text>
+      </view>
+      <view>
+        服务调理师：
+        <text>张小美 ￥2.5/分钟</text>
+      </view>
+      <view>
+        实付：
+        <text>￥120.00</text>
+      </view>
+      <view class="text-primary text-right">
+        <text>倒计时：02:32</text>
+        <button class="btn-primary chargeback" size="mini">立刻退单</button>
+      </view>
+    </view>
+  </view>
+</navigator>
+
+<view class='ui-empty' style="display:{{orders.length ? 'none' : 'flex'}};">
+  <view class='ui-empty-item'>
+    <image src="../../assets/img/iv_recharge_kong@2x.png"/>
+    <view class="empty-tips">暂无订单</view>
+  </view>
+</view>

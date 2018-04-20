@@ -5,11 +5,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200 rpx 0;  
-  box-sizing: border-box; 
-  
+  padding: 200 rpx 0;
+  box-sizing: border-box;
+
   }
 
+text,rich-text,view,form{
+  box-sizing: inherit;
+}
 .text-default {
   color: #294E4F;
 }
@@ -32,6 +35,14 @@
 .text-right {
   text-align: right; }
 
+.btn-primary{
+  color: #83C582;
+  background: #fff;
+}
+.btn-primary:after  {
+  border-color: #83C582 !important;
+}
+
 .header-box {
   position: fixed;
   top: 0;
@@ -43,14 +54,14 @@
   image{
       vertical-align: middle;
   }
-
-/*# sourceMappingURL=app.wxss.map */
+iconfont {
+  display: inline-block; }
 
 /* 充值记录、消费记录共用样式 */
 .list{
   display: flex;
-  flex-direction: column; 
-  justify-content: space-between; 
+  flex-direction: column;
+  justify-content: space-between;
   border-bottom:1rpx solid #EFEFEF;
   padding:30rpx 44rpx 35rpx 30rpx;
 }
@@ -63,7 +74,7 @@
   padding-left: 22rpx;
 }
 .listItem{
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   color:#B4B5B5;
   font-size: 28rpx;
@@ -84,7 +95,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 
 }
 .emptyItem{
@@ -103,6 +114,6 @@
   color:#B4B5B5;
   font-size: 28rpx;
   letter-spacing:0.08em;
-   padding-top:30rpx; 
+   padding-top:30rpx;
 }
 

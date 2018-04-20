@@ -1,0 +1,50 @@
+/* pages/login/login.wxss */
+page {
+  border-top: 1px solid #EFEFEF; }
+
+.pg-content {
+  margin: 30rpx; }
+
+.ui-title {
+  display: flex;
+  justify-content: space-between;
+  line-height: 150rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-top: 50rpx; }
+  .ui-title iconfont {
+    font-size: 180rpx; }
+
+input {
+  border-bottom: 1px solid #EFEFEF;
+  font-size: 30rpx;
+  padding: 20rpx 30rpx; }
+
+.auth-code {
+  position: relative; }
+  .auth-code .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    min-width: 5em;
+    font-size: 30rpx;
+    line-height: 39rpx;
+    padding: 30rpx; }
+
+.btn-submit {
+  margin-top: 99rpx;
+  height: 110rpx;
+  background-color: #83C582;
+  color: #fff;
+  font-size: 40rpx; }
+  .btn-submit:after {
+    border-color: #83C582; }
+  .btn-submit[disabled] {
+    color: #fff !important;
+    background-color: #D9EDD9 !important; }
+    .btn-submit[disabled]:after {
+      border-color: #D9EDD9; }
+
+/*# sourceMappingURL=login.wxss.map */

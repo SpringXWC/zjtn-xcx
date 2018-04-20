@@ -1,38 +1,53 @@
 <!--index.wxml-->
-
+<scroll-view class="ui-left-menu" scroll-y="true">
+  <view class="text-center logo">
+    <iconfont type="logo"></iconfont>
+  </view>
+  <view class="ui-navigators">
+    <navigator wx:for="{{leftMenu}}" wx:key="index" url="{{item.url}}">
+      <view>
+        <iconfont type="{{item.icon}}"></iconfont>
+        {{item.title}}
+      </view>
+      <iconfont type="arrow-right" class="arrow-right"></iconfont>
+    </navigator>
+  </view>
+</scroll-view>
+<view class="ui-content {{showLeftMenu?'ui-content-hide':''}}">
   <header bgColor="white" class="header-box" title="" titleFlex="3">
-    <iconfont slot="left" type="menu"></iconfont>
+    <iconfont slot="left" type="menu" bindtap="toggleShowLeftMenu"></iconfont>
     <view slot="righttxt" class="ui-header-right" bindtap='refresh'>
       切换城市
       <iconfont type="arrow-down" class="text-minor"></iconfont>
     </view>
   </header>
- <view class='{{scroll == true? "auto":"ban"}}'>
-  <view class='contair' wx:for='{{dataList}}' bindtap='pushToNext' wx:key='index' id='{{item.id}}'>
-    <view class='left'>
-        <image src='{{item.cover}}'></image> 
-    </view>   
-    <view class='con'>
+  <view class='{{scroll == true? "auto":"ban"}}'>
+    <view class='contair' wx:for='{{dataList}}' bindtap='pushToNext' wx:key='index' id='{{item.id}}'>
+      <view class='left'>
+        <image src='{{item.cover}}'></image>
+      </view>
+      <view class='con'>
         <view>{{item.shop}}</view>
         <view>{{item.area}}</view>
         <view>{{item.address}}</view>
         <view>{{item.num}}</view>
-    </view>
-    <view class='right'>
+      </view>
+      <view class='right'>
         <view>{{item.long}}</view>
-        <image src='../../assets/img/icon_home_nav@2x.png' bindtap='pushTo' id='{{item.id}}'></image> 
+        <image src='../../assets/img/icon_home_nav@2x.png' id='{{item.id}}'></image>
+      </view>
     </view>
-  </view>
   </view>
 
-  <view class='{{showHide}}' >
+  <view class='{{showHide}}'>
     <view class='list' wx:for="{{List}}" wx:key='index'>
       <text>{{item}}</text>
-        <iconfont type="tick" class='inco'></iconfont>
-    </view>  
+      <iconfont type="tick" class='inco'></iconfont>
+    </view>
   </view>
   <view class='{{hidden == true? "hide":"show"}}'>
-      
+
   </view>
 
+</view>
 

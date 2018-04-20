@@ -1,0 +1,88 @@
+@charset "utf-8";
+@import "../../base/config/config";
+
+page {
+  height: 100%;
+  background-color: #F5FAF5;
+}
+
+.red-packet {
+  position: relative;
+  image {
+    width: pxTorpx(750);
+    height: pxTorpx(569);
+  }
+}
+
+.packet-num {
+  position: absolute;
+  top: pxTorpx(253);
+  left: 0;
+  width: 100%;
+  color: #C1373F;
+  font-weight: bold;
+  .currency {
+    font-size: pxTorpx(44);
+    vertical-align: top;
+    margin-top: pxTorpx(8);
+    margin-right: pxTorpx(15);
+  }
+  text {
+    line-height: 1em;
+    display: inline-block;
+    font-size: pxTorpx(80);
+  }
+}
+
+.tips {
+  padding: 0 pxTorpx(30);
+  font-size: pxTorpx(26);
+  color: $txtColorDefault;
+  .ui-num {
+    color: #D9565D;
+  }
+  .ui-num-box {
+    margin-top: pxTorpx(10);
+  }
+}
+
+//分割线
+.dividing {
+  position: relative;
+  text-align: center;
+  font-size: pxTorpx(24);
+
+  margin: pxTorpx(105) pxTorpx(46);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    display: block;
+    border-bottom: 1px solid #EBEBEB;
+  }
+  text {
+    padding: 0 pxTorpx(25);
+    background-color: #F5FAF5;
+    color: #203736;
+  }
+}
+
+//
+.share {
+  display: flex;
+  text-align: center;
+  .share-item {
+    flex: 1;
+    image{
+      width: pxTorpx(94);
+      height: pxTorpx(94);
+    }
+    text{
+      font-size: pxTorpx(26);
+      color: $txtColorDefault;
+    }
+  }
+}

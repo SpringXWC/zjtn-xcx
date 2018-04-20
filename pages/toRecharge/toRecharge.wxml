@@ -4,7 +4,7 @@
     <view class="activity">充值活动</view>
     <view wx:for="{{list}}" wx:key="key" class='discounts'>
       <view class='discountsMoney'>充{{item.money}}元送{{item.send}}元</view>
-      <view class='select' bindtap='selected'>{{select}}</view>
+      <view class='select {{item.index == selected? "active": ""}}' bindtap='selected' data-index="{{item.index}}">{{selected == item.index?"已选择" :"选择"}}</view>
     </view>
   </view>
   <view class='hint'>
@@ -20,7 +20,7 @@
         <iconfont type="{{item.iconImg}}" class="icon"></iconfont>
         <text class='text'>{{item.text}}</text>
       </view>
-      <view class='select' bindtap='selected'>{{select}}</view>
+      <view class='select {{item.index == selectModes ? "active": ""}}' bindtap='selectMode' data-index="{{item.index}}">{{selectModes == item.index?"已选择" :"选择"}}</view>
     </view>
   </view>
   <view class='btn'>

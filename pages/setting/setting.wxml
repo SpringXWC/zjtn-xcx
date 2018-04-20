@@ -1,0 +1,42 @@
+<!--pages/setting/setting.wxml-->
+<view class="text-center logo">
+  <iconfont type="logo"></iconfont>
+</view>
+<view class="paragraph">
+  <view class="text-primary">
+    <text>正经推拿文化</text>
+  </view>
+  <view>
+    <text>主张：能祛痛的推拿</text>
+  </view>
+  <view>
+    <text>愿景：追寻健康人生</text>
+  </view>
+  <view>
+    <text>事业：专业亚健康调养共享平台</text>
+  </view>
+  <view>
+    <text>方法：传承祖传按摩推拿</text>
+  </view>
+</view>
+<view class="paragraph">
+  <view>
+    <text class="text-primary">联系我们</text>
+  </view>
+  <view>
+    <text>官方微信：正经推拿亚健康调养</text>
+  </view>
+  <view>
+    <text>官方微博：正经推拿亚健康调养</text>
+  </view>
+  <view>
+    <text>客服热线：400-200-200</text>
+  </view>
+  <view>
+    <text>官方网站：http://www.zhengjingmassage.com</text>
+  </view>
+</view>
+<view class="btn-box">
+  <button>退出</button>
+</view>
+

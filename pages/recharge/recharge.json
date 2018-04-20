@@ -1,3 +1,6 @@
 {
-  "navigationBarTitleText": "充值记录"
+  "navigationBarTitleText": "充值记录",
+  "usingComponents": {
+    "redpacket-pop":"/components/redpacket-pop/redpacket-pop"
+  }
 }

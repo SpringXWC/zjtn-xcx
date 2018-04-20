@@ -1,0 +1,29 @@
+/* pages/chooseTime/chooseTime.wxss */
+.chooseTomeBox{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #F5FAF5;
+}
+.top{
+  width: 690rpx;
+  height: 223rpx;
+  background: white;
+  font-size: 30rpx;
+  color: #203736;
+  margin-top: 28rpx;
+  margin-left: 30rpx;
+  position: absolute;
+}
+.shopName{
+ margin-top: 68rpx;
+  margin-left: 28rpx;
+}
+.startTime{
+  margin-top: 32rpx;
+  margin-left: 28rpx
+}
+.middle{
+  margin-top: 397rpx;
+}

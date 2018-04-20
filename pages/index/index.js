@@ -73,23 +73,52 @@ Page({
     showHide: false,
     hidden: false,
     scroll: true,
-    List: ['深圳市', '广州市', '珠海市', '湛江市', '梅州市']
-
+    List: ['深圳市', '广州市', '珠海市', '湛江市', '梅州市'],
+    //显示左侧菜单
+    showLeftMenu: false,
+    leftMenu: [
+      {
+        icon: "order1",
+        title: "我的订单",
+        url: "/pages/order/orderList"
+      }, {
+        icon: "account",
+        title: "我的账户",
+        url: "/pages/personal/personal"
+      }, {
+        icon: "invite",
+        title: "邀请好友",
+        url: "/pages/inviteFriends/inviteFriends"
+      }, {
+        icon: "service",
+        title: "在线客服",
+        url: ""
+      }, {
+        icon: "setting",
+        title: "设置",
+        url: "/pages/setting/setting"
+      }
+    ]
   },
-  pushTo: function (e) {
-    var p = e.currentTarget.id;
-    var longitude = this.data.dataList[p].longitude;
-    var latitude = this.data.dataList[p].latitude;
-    console.log(longitude)
-    console.log(latitude)
-    wx.navigateTo({
-      url: '../map/map?longitude=' + longitude + '&latitude=' + latitude + '',
+  // pushTo: function (e) {
+  //   var p = e.currentTarget.id;
+  //   var longitude = this.data.dataList[p].longitude;
+  //   var latitude = this.data.dataList[p].latitude;
+  //   console.log(longitude)
+  //   console.log(latitude)
+  //   wx.navigateTo({
+  //     // url: '../map/map?longitude=' + longitude + '&latitude=' + latitude + '',
 
-      success: function (res) {
+  //     success: function (res) {
 
-      },
-      fail: function (res) { },
-      complete: function (res) { },
+  //     },
+  //     fail: function (res) { },
+  //     complete: function (res) { },
+  //   })
+  // },
+  onHide: function (e) {
+    this.setData({
+      showLeftMenu: false
     })
   },
   refresh: function (e) {
@@ -102,13 +131,18 @@ Page({
       scroll: !this.data.scroll
     })
   },
-  pushToNext:function(e){
+  pushToNext: function (e) {
     console.log(1111)
     var p = e.currentTarget.id;
     var shop = this.data.dataList[p].shop
     console.log(p)
     wx.navigateTo({
-      url: '../chooseTime/chooseTime?shop=' + shop +'',
+      url: '../chooseTime/chooseTime?shop=' + shop + '',
+    })
+  },
+  toggleShowLeftMenu: function (e) {
+    this.setData({
+      showLeftMenu: !this.data.showLeftMenu
     })
   }
 

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "iconfont": "/components/iconfont/iconfont"
+  },
+  "navigationBarTitleText": "我的订单",
+  "enablePullDownRefresh": true
+}

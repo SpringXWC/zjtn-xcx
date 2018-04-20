@@ -5,44 +5,43 @@ Page({
    * 页面的初始数据
    */
   data: {
-    disabled:false,
-    select: '选择',
+    disabled:true,
+    selected:0,
+    selectModes:0,
+
     list:[
-      { money: '1000', send: '100', },
-      { money: '1000', send: '100',  },
-      { money: '1000', send: '100', },
+      { index:1, money: '1000', send: '100', text: '选择', },
+      { index: 2, money: '1000', send: '100', text: '选择' },
+      { index: 3, money: '1000', send: '100', text: '选择' },
     ],
     payment:[
-      { iconImg: 'wechat', text: '微信支付', },
-      { iconImg: 'alipay', text: '支付宝支付', },
+      { index: 1, iconImg: 'wechat', text: '微信支付', },
+      { index: 2, iconImg: 'alipay', text: '支付宝支付', },
     ],
-    showAmountModal: {
-      showModal: 'hideModal',
-      showMask: 'hideMask',
-    },
-
-  },
-  showAmountModal: function (e) {
-    var that = this;
-    that.setData({
-      showAmountModal: {
-        showModal: 'showModal',
-        showMask: 'showMask',
-      }
-    })
-  },
-  hideAmountModal: function (e) {
-    var that = this;
-    that.setData({
-      showAmountModal: {
-        showModal: 'hideModal',
-        showMask: 'hideMask',
-      },
-    })
-  },
-  // 已选择
-  selected:function(){
    
+  },
+  // 选择充值金额
+  
+  selected:function(e){
+    this.setData({
+      selected: e.currentTarget.dataset.index
+    })
+    this.select();
+  },
+  // 选择支付方式
+  selectMode:function(e){
+    this.setData({
+      selectModes: e.currentTarget.dataset.index
+    })
+    this.select();
+  },
+  // 判断提交按钮是否禁用
+  select:function(){
+    if (this.data.selected > 0 && this.data.selectModes > 0){
+      this.setData({
+        disabled:false
+      })
+    }
   },
   /**
    * 生命周期函数--监听页面加载

@@ -1,0 +1,131 @@
+@charset "utf-8";
+@import "../../base/config/config";
+/* pages/order/orderDetail.wxss */
+page {
+  background-color: #F5FAF5;
+  font-size: pxTorpx(28);
+  height: 100%;
+}
+
+.ui-empty {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: $txtColorMinor;
+  text-align: center;
+  justify-content: center;
+  image {
+    width: pxTorpx(264);
+    height: pxTorpx(240);
+  }
+  .empty-tips {
+    margin-top: pxTorpx(20);
+    margin-bottom: pxTorpx(40);
+  }
+}
+.ui-empty{
+  .empty-tips{
+    margin-bottom: pxTorpx(150);
+  }
+}
+.flex-box {
+  display: flex;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.dib {
+  display: inline-block;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.ui-callout {
+  font-size: pxTorpx(30);
+  line-height: 2em;
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 1em;
+    width: pxTorpx(10);
+    border-radius: pxTorpx(10);
+    background-color: $mainColor;
+    margin-right: pxTorpx(20);
+    margin-bottom: pxTorpx(-3);
+  }
+}
+
+//订单信息
+.order-info {
+  margin: pxTorpx(21) pxTorpx(30);
+  .ui-title {
+    border-bottom: 1px solid #EBEBEB;
+  }
+  .collect {
+    margin-left: pxTorpx(10);
+  }
+  & > .space-between {
+    padding: pxTorpx(30);
+  }
+  .info-detail {
+    padding: pxTorpx(30);
+    & > view {
+      display: inline-block;
+      width: pxTorpx(480);
+      vertical-align: top;
+      line-height: 2em;
+    }
+  }
+  .media-object {
+    flex-shrink: 0;
+    width: pxTorpx(120);
+    height: pxTorpx(120);
+    margin-right: pxTorpx(30);
+    margin-top: pxTorpx(10);
+  }
+  /*  .shop-name{
+      display: inline-block;
+      @include ellipsis()
+    }
+    .ui-gps{
+      float: right;
+    }*/
+  .ui-shop {
+    max-width: 100%;
+    justify-content: space-between;
+    .shop-name {
+      @include ellipsis()
+    }
+    .ui-gps {
+      flex-shrink: 0;
+    }
+  }
+  .chargeback {
+    vertical-align: middle;
+    margin-left: pxTorpx(30);
+  }
+}
+
+//支付方式
+.pay-way {
+  line-height: 1.8em;
+  padding: pxTorpx(15) pxTorpx(30);
+  margin-top: pxTorpx(22);
+  margin-bottom: pxTorpx(40);
+  .dib {
+    margin-right: pxTorpx(50);
+  }
+}
+
+//服务承诺
+.pledge {
+  padding: 0 pxTorpx(30);
+  .paragraph {
+    color: $txtColorMinor;
+    line-height: 1.8em;
+  }
+}

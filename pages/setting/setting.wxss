@@ -1,0 +1,28 @@
+.logo {
+  margin-top: 72rpx;
+  margin-bottom: 75rpx;
+  font-size: 165rpx;
+  color: #83C582;
+  line-height: 1em; }
+
+.paragraph {
+  padding: 0 46rpx 40rpx; }
+  .paragraph view {
+    font-size: 28rpx;
+    margin-bottom: 20rpx; }
+    .paragraph view.text-primary {
+      font-size: 36rpx;
+      margin-bottom: 25rpx; }
+  .paragraph text {
+    display: inline-block; }
+
+.btn-box {
+  padding: 30rpx; }
+  .btn-box button {
+    background: #EDF6EC;
+    border-color: #EDF6EC;
+    color: #83C582; }
+    .btn-box button:after {
+      display: none; }
+
+/*# sourceMappingURL=setting.wxss.map */

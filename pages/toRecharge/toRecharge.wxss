@@ -92,11 +92,18 @@ page{
   margin:0 30rpx;
   background-color:#83C582;
   font-size: 40rpx;
+  border:0;
+  
  
   
 }
+.btn button::after{
+  border:0
+}
 
-
-
+.active{
+  color:#fff;
+  background-color:#83C582;
+}
 
 

@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import "../../base/config/config";
+/* pages/login/login.wxss */
+page{
+  border-top: 1px solid #EFEFEF;
+}
+.pg-content {
+  margin: pxTorpx(30);
+}
+.ui-title {
+  display: flex;
+  justify-content: space-between;
+  line-height: pxTorpx(150);
+  padding-left: pxTorpx(30);
+  padding-right: pxTorpx(30);
+  margin-top: pxTorpx(50);
+  iconfont{
+    font-size: pxTorpx(180);
+  }
+
+}
+input {
+  border-bottom: 1px solid #EFEFEF;
+  font-size: pxTorpx(30);
+  padding: pxTorpx(20) pxTorpx(30);
+}
+.auth-code{
+  position: relative;
+  .btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+    min-width: 5em;
+    font-size: pxTorpx(30);
+    line-height: pxTorpx(39);
+    padding: pxTorpx(30);
+  }
+}
+.btn-submit {
+  margin-top: pxTorpx(99);
+  height: pxTorpx(110);
+  background-color: $mainColor;
+  color: #fff;
+  font-size: pxTorpx(40);
+  &:after {
+    border-color: $mainColor;
+  }
+  &[disabled] {
+    color: #fff !important;
+    background-color: #D9EDD9 !important;
+    &:after {
+      border-color: #D9EDD9;
+    }
+  }
+}

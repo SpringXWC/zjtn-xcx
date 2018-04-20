@@ -1,14 +1,19 @@
 {
   "pages": [
-    "pages/evaluate/evaluate",
-    "pages/toRecharge/toRecharge",
     "pages/index/index",
-    "pages/personal/personal",
-    "pages/expenditure/expenditure",
-    "pages/recharge/recharge",
+    "pages/chooseTime/chooseTime",
     "pages/cashcoupon/cashcoupon",
-    "pages/membership/membership"
-  
+    "pages/expenditure/expenditure",
+    "pages/membership/membership",
+    "pages/personal/personal",
+    "pages/recharge/recharge",
+    "pages/toRecharge/toRecharge",
+    "pages/evaluate/evaluate",
+    "pages/setting/setting",
+    "pages/inviteFriends/inviteFriends",
+    "pages/order/orderDetail",
+    "pages/order/orderList",
+    "pages/login/login"
   ],
   "window": {
     "backgroundTextStyle": "dark",

@@ -1,0 +1,35 @@
+<!--pages/inviteFriends/inviteFriends.wxml-->
+<view class="red-packet text-center">
+  <image src="../../assets/img/iv_yaoqing_hongbao@2x.png"></image>
+  <view class="packet-num text-center">
+    <text class="currency">¥</text>
+    <text>70</text>
+  </view>
+  <view class="tips">
+    <view>将红包分享给好友</view>
+    <view class="ui-num-box">
+      当TA使用后您将获得
+      <text class="ui-num">70元</text>
+      红包奖励
+    </view>
+  </view>
+</view>
+
+<view class="dividing">
+  <text>分享到</text>
+</view>
+
+<view class="share">
+  <view class="share-item">
+    <image src="../../assets/img/icon_yaoqing_weixin@2x.png" ></image>
+    <view>
+      <text>微信</text>
+    </view>
+  </view>
+  <view class="share-item">
+    <image src="../../assets/img/icon_yaoqing_pengyouquan@2x.png"></image>
+    <view>
+      <text>朋友圈</text>
+    </view>
+  </view>
+</view>

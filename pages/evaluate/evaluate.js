@@ -6,31 +6,29 @@ Page({
    */
   data: {
     tag:true,
-    current:'',
+    evaluate:'',
+    disabled:true,
+    current:0,
     stars:[
-      { iconImg:'star',index:'1'},
-      { iconImg: 'star',index:'2' },
-      { iconImg: 'star', index: '3' },
-      { iconImg: 'star', index: '4' },
-      { iconImg: 'star', index: '5' },
+      { iconImg:'star',index:1},
+      { iconImg: 'star',index:2 },
+      { iconImg: 'star', index: 3 },
+      { iconImg: 'star', index: 4 },
+      { iconImg: 'star', index: 5 },
     ]
   },
+  // 选择星星
   selectStar: function (e) {
-    var index = e.currentTarget.dataset.index; // 获取当前点击的是第几颗星星
-    var tempStars = this.data.stars; // 暂存星星数组
-    for (var i = 0; i < tempStars.length; i++) {
-      if (i <= index) { // 小于等于index的是满心
-        tempStars[i] = 'selectStar'
-      } else { // 其他是空心
-        tempStars[i].class = 'star'
-      }
+    var item = e.currentTarget.dataset.index;
+    if (this.data.current == item ){
+      item = item-1;
     }
-    // 重新赋值就可以显示了
     this.setData({
-      stars: tempStars
+      current: item,
+      disabled:false
     })
   },
-
+  
   /**
    * 生命周期函数--监听页面加载
    */

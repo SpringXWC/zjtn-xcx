@@ -1,5 +1,5 @@
 <!--pages/expenditure/expenditure.wxml-->
-<view class='expenditure'>
+ <view class='expenditure'>
    <view wx:for="{{list}}" wx:key="key" class='list' hidden="{{!isEmpty}}">
      <view class='date'>
         <text>{{item.date}}</text>
@@ -16,4 +16,5 @@
     <view>暂无消费记录</view>
   </view>
  </view>
-</view>
+</view> 
+<pop></pop> 

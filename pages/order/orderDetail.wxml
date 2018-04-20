@@ -1,0 +1,66 @@
+<!--pages/order/orderDetail.wxml-->
+<view class="order-info bg-white margin-groove">
+  <view class="ui-title flex-box space-between">
+    <view>
+      订单号：
+      <text>112521252211254</text>
+    </view>
+    <view>未开始</view>
+  </view>
+  <view class="info-detail">
+    <image src="../../assets/imgs/1.png" class="media-object"></image>
+    <view>
+      <view class="flex-box ui-shop">
+        <view class="shop-name">
+          预约门店：
+          <text>南山区店 Lorem ipsum dolor sit amet, consecteturs.</text>
+        </view>
+        <view class="text-primary ui-gps">
+          <iconfont type="location"></iconfont>
+          去导航
+        </view>
+      </view>
+      <view>
+        开始时间：
+        <text>2018/1/18/14：40</text>
+      </view>
+      <view>
+        服务项目：
+        <text>失眠头痛</text>
+      </view>
+      <view>
+        服务调理师：
+        <text>张小美 ￥2.5/分钟</text>
+      </view>
+      <view>
+        实付：
+        <text>￥120.00</text>
+      </view>
+      <view class="text-primary text-right">
+        <text>倒计时：02:32</text>
+        <button class="btn-primary chargeback" size="mini">立刻退单</button>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="pay-way bg-white margin-groove">
+  <view class="ui-callout">支付方式</view>
+  <view class="dib">服务合计：￥150</view>
+  <view class="dib">优惠抵扣：￥30</view>
+  <view>微信支付：￥120</view>
+</view>
+<view class="pledge margin-groove">
+  <view class="ui-callout">服务承诺</view>
+  <view class="paragraph">
+    1. 您好，调理师已为您准备号XXL号按摩服，热敷药包，红茶和葡萄干，已提前打开空调，并于订单开始前五分钟到大厅门口迎接您！
+  </view>
+  <view class="paragraph">
+    2. 头颈肩痛是因长期久坐，缺乏运动，韩式入侵等导致的头颈肩僵硬，疼痛；调理师会运用推拿、刮痧、艾灸等方法缓解肌肉紧张及痉挛，益气活血，祛瘀散寒。
+  </view>
+  <view class="paragraph">
+    3. 颈肩部推拿25分钟+头面部推拿25分钟+颈部刮痧5分钟/头部刮痧5分钟坐位推拿放松5分钟。调理师也会根据您的需求灵活调整，充分尊重您的意见。
+  </view>
+  <view class="paragraph">
+    4.为您专属匹配的调理师：
+  </view>
+</view>

@@ -1,0 +1,37 @@
+@charset "utf-8";
+@import "../../base/config/config";
+
+.logo {
+  margin-top: pxTorpx(72);
+  margin-bottom: pxTorpx(75);
+  font-size: pxTorpx(165);
+  color: $mainColor;
+  line-height: 1em;
+}
+
+.paragraph {
+  padding: 0 pxTorpx(46) pxTorpx(40);
+  view {
+    font-size: pxTorpx(28);
+    margin-bottom: pxTorpx(20);
+    &.text-primary {
+      font-size: pxTorpx(36);
+      margin-bottom: pxTorpx(25);
+    }
+  }
+  text {
+    display: inline-block;
+  }
+}
+
+.btn-box {
+  padding: pxTorpx(30);
+  button {
+    background: #EDF6EC;
+    border-color: #EDF6EC;
+    color: $mainColor;
+    &:after{
+      display: none;
+    }
+  }
+}

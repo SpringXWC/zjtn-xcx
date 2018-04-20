@@ -1,0 +1,17 @@
+
+
+<view class='masking' hidden='{{hid}}'>
+  <view class="maskingCon">
+    <view class='evaluatePop' >
+      <image src="../../assets/img/iv_evaluate_popup@2x.png" />
+      <iconfont type="close" class="close" bindtap='close'></iconfont>
+    </view>
+    <view class='textCon'>
+      <view class='text1'>尊敬的用户：</view>
+      <view class='text2'>请您为我的服务进行评价</view>
+      <view class='text3'>正经推拿再次表示感谢！</view>
+      <button type="primary" size="{{primarySize}}" loading="{{loading}}" plain="{{plain}}"
+        disabled="{{disabled}}" bindtap="toEvaluate">立即去评价 </button>
+    </view>
+  </view>
+</view>

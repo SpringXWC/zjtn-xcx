@@ -1,0 +1,13 @@
+<view class='masking' hidden='{{hid}}'>
+  <view class="redpacketpop">
+      <image src="../../assets/img/iv_popup_libao@2x.png" />
+      <iconfont type="close" class="close" bindtap='close'></iconfont>
+     <view class='text'>
+      <view class='giftbag'>您好，新朋友优惠礼包！</view>
+      <view class='giftbag-money1'>正经推拿为您的健康准备了</view>
+      <view class='giftbag-money2'>70元优惠礼包</view>
+      <view class='examine'>通过“会员中心-我的账户” 即可查看</view>
+      <view class='overdue'>代金券通过微信，APP使用，有效期为60天。</view>
+    </view> 
+  </view>
+</view>
